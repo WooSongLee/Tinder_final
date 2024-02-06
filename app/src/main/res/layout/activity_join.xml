@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3FDFD">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageArea"
+                android:src="@drawable/user"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#CBF1F5"
+                android:layout_margin="10dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailArea"
+                    android:hint="e-mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterMaxLength="10"
+                app:counterEnabled="true"
+                android:background="#CBF1F5"
+                android:layout_margin="10dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordArea"
+                    android:hint="password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterMaxLength="10"
+                app:counterEnabled="true"
+                android:background="#CBF1F5"
+                android:layout_margin="10dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:hint="passwordCheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#CBF1F5"
+                android:layout_margin="10dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nicknameArea"
+                    android:hint="nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatToggleButton
+                android:textOn="male"
+                android:textOff="female"
+                android:id="@+id/genderArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#CBF1F5"
+                >
+            </androidx.appcompat.widget.AppCompatToggleButton>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#CBF1F5"
+                android:layout_margin="10dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/cityArea"
+                    android:hint="city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#CBF1F5"
+                android:layout_margin="10dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ageArea"
+                    android:hint="age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/joinBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Join"
+                android:layout_margin="10dp"
+                android:background="#71C9CE"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

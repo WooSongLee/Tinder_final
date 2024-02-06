@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="20dp"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:adjustViewBounds="true"
+            android:id="@+id/profileImageArea"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"/>
+
+        <TextView
+            android:fontFamily="@font/intel"
+            android:id="@+id/itemNickname"
+            android:textSize="15sp"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:fontFamily="@font/intel"
+            android:id="@+id/itemAge"
+            android:textSize="15sp"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:fontFamily="@font/intel"
+            android:id="@+id/itemCity"
+            android:textSize="15sp"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="City"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:fontFamily="@font/intel"
+            android:id="@+id/itemGender"
+            android:textSize="15sp"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/left_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:src="@drawable/ok"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/right_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:src="@drawable/no"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+
+</androidx.cardview.widget.CardView>
